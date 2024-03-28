@@ -1,0 +1,1226 @@
+/* Reset CSS - Ajusta o comportamento padrão de todos os elementos para uma base consistente em todos os navegadores. */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos. */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos. */
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura/altura total do elemento. */
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a família de fontes padrão para todo o corpo do documento. */
+    font-size: 16px; /* Define o tamanho de fonte padrão para todo o corpo do documento. */
+    background-color: #dbdfe1; /* Define o fundo do corpo como transparente. */
+    color: #333; /* Define a cor do texto para um cinza escuro. */
+    line-height: 1.6; /* Define a altura da linha do texto para melhorar a legibilidade. */
+    padding-top: 0px; /* Adiciona espaço no topo do corpo do documento. */
+    padding-left: 0px; /* Adiciona espaço à esquerda do corpo do documento. */
+    padding-right: 0px; /* Adiciona espaço à direita do corpo do documento. */
+    padding-bottom: 0px; /* Adiciona espaço no fundo do corpo do documento. */
+}
+
+
+
+
+
+
+
+
+/* Estilos do cabeçalho */
+/* Estilos Gerais do Cabeçalho */
+header {
+    background-color: #fff; /* Cor de fundo branca */
+    color: #333; /* Cor do texto cinza escuro */
+    padding-top: 0px;
+    padding-bottom: 0px; /* Espaçamento inferior */
+    padding-left: 0px;
+    padding-right: 0px; /* Espaçamento à direita */
+    position: relative; /* Adicionado para garantir o posicionamento correto dos filhos absolutos */
+    height: 130px; /* Altura do cabeçalho que você forneceu */
+}
+
+.top-header {
+    display: flex; /* Usa flexbox para disposição dos elementos */
+    justify-content: space-between; /* Espaça os elementos uniformemente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    padding-top: 20px; /* Preenchimento superior */
+    padding-bottom: 10px; /* Preenchimento inferior */
+    padding-right: 20px; /* Preenchimento direito */
+    padding-left: 20px; /* Preenchimento esquerdo */
+}
+
+/* Estilos para a Logo */
+.logo-image {
+    height: 50px; /* Altura fixa */
+    width: auto; /* Largura automática */
+    object-fit: contain; /* Garante que a imagem seja dimensionada proporcionalmente */
+}
+
+/* Estilos para a Área Direita do Cabeçalho */
+.header-right {
+    position: absolute; /* Posicionamento absoluto */
+    right: 20px; /* À direita do contêiner */
+    top: 30px; /* Distância do topo */
+    display: flex; /* Usa flexbox para disposição dos elementos */
+    align-items: center; /* Centraliza os elementos verticalmente */
+}
+
+.header-right input[type="search"] {
+    padding: 10px; /* Preenchimento interno */
+    margin-right: 20px; /* Margem à direita */
+    border: 1px solid #ccc; /* Borda sólida */
+    border-radius: 20px; /* Cantos arredondados */
+    width: 240px; /* Largura fixa */
+}
+
+.header-right button {
+    background-color: #4b0082; /* Cor de fundo roxa */
+    color: #fff; /* Cor do texto branca */
+    padding: 10px 20px; /* Preenchimento interno */
+    border: none; /* Sem borda */
+    border-radius: 20px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    font-weight: bold; /* Texto em negrito */
+    margin-left: 20px; /* Margem à esquerda */
+}
+
+/* Estilos para as Bandeiras */
+.country-flag {
+    margin-left: 10px; /* Margem à esquerda */
+    width: 24px; /* Largura fixa */
+    height: auto; /* Altura automática */
+}
+
+/* Estilos da Navegação */
+nav {
+    background-color: #fff; /* Cor de fundo branca */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+nav ul {
+    list-style-type: none; /* Remove estilos de lista */
+    overflow: hidden; /* Oculta conteúdo transbordante */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimento */
+    display: flex; /* Usa flexbox para disposição dos elementos */    
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    background-color: #fff; /* Cor de fundo branca */
+    text-align: center; /* Alinha o texto ao centro */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    height: 40px; /* Altura fixa para o menu de navegação */
+}
+
+nav ul li {
+    display: inline-block; /* Exibe os itens da lista em blocos, mas em linha */
+}
+
+nav ul li a {
+    display: block; /* Exibe os links como blocos para preencher o espaço do li */
+    padding-top: 10px; /* Preenchimento superior */
+    padding-bottom: 10px; /* Preenchimento inferior */
+    padding-right: 12px; /* Preenchimento direito */
+    padding-left: 12px; /* Preenchimento esquerdo */
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #4b0082; /* Cor do texto roxa */
+    font-weight: bold; /* Texto em negrito */
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #4b0082; /* Cor de fundo roxa ao passar o mouse ou ativo */
+    color: #fff; /* Cor do texto branca */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 1px 10px; /* Ajuste de preenchimento para aumentar a área selecionável */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    /* Estilos para telas menores (tablets) */
+    nav ul {
+        height: 40px; /* Altura ajustada para telas menores */
+    }
+    /* ... (outros estilos para tablets) ... */
+}
+
+@media (max-width: 480px) {
+    /* Estilos para telas de smartphones */
+    nav ul {
+        height: 30px; /* Altura ajustada para telas de smartphones */
+    }
+    /* ... (outros estilos para smartphones) ... */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos do rodapé */
+footer {
+    background-color: #4b0082; /* Define a cor de fundo do rodapé como roxo escuro. */
+    color: #fff; /* Define a cor do texto do rodapé como branco. */
+    text-align: center; /* Centraliza o texto dentro do rodapé. */
+    padding: 10px 0; /* Adiciona preenchimento na parte superior e inferior do rodapé. */
+    height: 42px; /* Altura do rodapé que calculamos */
+}
+
+footer p {
+    color: #fff; /* Define a cor do texto dos parágrafos dentro do rodapé como branco. */
+}
+
+
+
+/* Estilos para o "Chat" */
+#chat-icon-container {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+}
+
+#chat-icon {
+    background-color: #f3f5f6; /* Cor de fundo do botão, correspondente ao esquema de cores do site */
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat-icon img {
+    width: 30px; /* Ou o tamanho que você preferir */
+    height: auto;
+}
+
+
+
+
+
+
+/* Estilos para Seção "Home" */
+
+/* Estilos para Banners Rotativos */
+.carousel {
+    position: relative; /* Mantém a posição relativa do contêiner do carrossel. */
+    max-width: 100%; /* A largura máxima do carrossel se ajusta à largura disponível. */
+    height: calc(100vh - 130px - 42px); /* Altura total da viewport menos a altura do cabeçalho e do rodapé. */
+    margin: auto; /* Centraliza o carrossel horizontalmente na página. */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda os limites do carrossel. */
+    display: flex; /* Utiliza flexbox para centralizar o conteúdo do carrossel. */
+    align-items: center; /* Centraliza o conteúdo verticalmente. */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente. */
+}
+
+.carousel-images {
+    display: flex; /* Mantém o display flexível para alinhar as imagens do carrossel em linha. */
+    justify-content: center; /* Centraliza as imagens horizontalmente. */
+    align-items: center; /* Centraliza as imagens verticalmente. */
+    height: 100%; /* Faz com que o contêiner das imagens ocupe toda a altura do carrossel. */
+    transition: transform 0.5s ease; /* Mantém a transição suave para o movimento das imagens do carrossel. */
+}
+
+.carousel-image {
+    max-width: 100%; /* Mantém a largura máxima da imagem para 100% do contêiner para preservar o tamanho original. */
+    height: auto; /* Mantém a proporção da imagem. */
+    display: block; /* Mantém a imagem como um bloco para ajudar na centralização. */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente. */
+    object-fit: cover; /* Mantém a imagem cobrindo o espaço disponível sem distorcer. */
+}
+
+.carousel-item {
+    flex: none; /* Não permite que o item do carrossel cresça ou encolha. */
+    width: 100%; /* Define a largura do item do carrossel para 100% do contêiner. */
+    text-align: center; /* Centraliza o texto dentro do item, se houver. */
+    display: flex; /* Utiliza flexbox dentro do item do carrossel. */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente dentro do item. */
+    align-items: center; /* Centraliza o conteúdo verticalmente dentro do item. */
+}
+
+
+.carousel-prev,
+.carousel-next {
+    position: absolute; /* Posiciona os botões de navegação do carrossel de forma absoluta em relação ao seu contêiner. */
+    top: 50%; /* Posiciona os botões na metade da altura do contêiner do carrossel. */
+    transform: translateY(-50%); /* Desloca os botões verticalmente para cima pela metade de sua própria altura para centralizá-los. */
+    color: #fff; /* Define a cor dos ícones dos botões como branca. */
+    font-size: 2rem; /* Define o tamanho da fonte dos ícones dos botões. */
+    background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo dos botões como preta com transparência. */
+    padding: 10px; /* Adiciona preenchimento interno aos botões. */
+    cursor: pointer; /* Muda o estilo do cursor para indicar que os botões são clicáveis. */
+    border-radius: 0 3px 3px 0; /* Arredonda os cantos dos botões. */
+    z-index: 100; /* Coloca os botões acima de outros elementos no eixo z. */
+}
+
+.carousel-prev {
+    left: 0; /* Alinha o botão anterior à esquerda do contêiner do carrossel. */
+    border-radius: 3px 0 0 3px; /* Arredonda os cantos esquerdo superior e inferior do botão anterior. */
+}
+
+.carousel-next {
+    right: 0; /* Alinha o botão seguinte à direita do contêiner do carrossel. */
+    border-radius: 0 3px 3px 0; /* Arredonda os cantos direito superior e inferior do botão seguinte. */
+}
+
+.carousel-cta-btn {
+    position: absolute; /* Posiciona o botão de chamada à ação (CTA) de forma absoluta em relação ao seu contêiner. */
+    bottom: 20px; /* Posiciona o botão CTA a 20 pixels do fundo do contêiner do carrossel. */
+    left: 50%; /* Posiciona o botão CTA a 50% da largura do contêiner do carrossel (centralizado horizontalmente). */
+    transform: translateX(-50%); /* Desloca o botão CTA para a esquerda pela metade de sua própria largura para garantir que esteja centralizado. */
+    background-color: #4b0082; /* Define a cor de fundo do botão CTA como roxa. */
+    color: #fff; /* Define a cor do texto do botão CTA como branca. */
+    padding: 10px 20px; /* Adiciona preenchimento interno ao botão CTA. */
+    text-decoration: none; /* Remove o sublinhado do texto do botão CTA. */
+    font-weight: bold; /* Aplica negrito ao texto do botão CTA. */
+    border-radius: 5px; /* Arredonda os cantos do botão CTA. */
+    transition: background-color 0.3s; /* Suaviza a transição de cor de fundo quando o mouse passa sobre o botão CTA. */
+}
+
+.carousel-cta-btn:hover {
+    background-color: #372759; /* Muda a cor de fundo do botão CTA ao passar o mouse. */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para Seção "Sobre nós" */
+
+.main-container {
+    display: flex;
+    flex-direction: column; /* Organiza os itens verticalmente */
+    justify-content: flex-start; /* Alinha os itens ao início do container */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 20px; /* Adiciona um pouco de espaço interno */
+    border-radius: 0px; /* Borda arredondada para um visual moderno */
+    background-color: rgba(255, 255, 255, 0.9); /* Branco com opacidade de 80% */
+    background-image: url('file:///C:/Users/carlo/Desktop/CTS/Site/Imagens/Sobre/Teste%201.png'); /* Caminho absoluto para a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-size: cover; /* Garante que a imagem de fundo cubra todo o espaço disponível */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+.content-box {
+    width: 80%; /* Ajusta a largura para ocupar todo o espaço disponível */
+    padding: 20px; /* Espaçamento interno para não colar o texto nas bordas */
+    max-width: 1080px; /* Define uma largura máxima para evitar que se tornem muito largos em telas grandes */
+    margin: 20px auto; /* Mantém a margem superior/inferior e centraliza horizontalmente */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
+    background-color: rgba(255, 255, 255, 0.9); /* Branco com opacidade de 70% para translucidez */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .content-box {
+        width: 90%; /* Mantém a largura ajustada para dispositivos móveis */
+    }
+    /* Não é mais necessário ajustar a direção flex aqui, pois já está definido para column */
+}
+
+body {
+    min-height: 100vh; /* Isso garante que o body tenha pelo menos a altura da tela */
+    /* Mantenha os outros estilos do body como estão */
+}
+
+.about-content {
+    width: 50%; /* Ajusta para a largura desejada, 50% é um exemplo */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+    /* Os outros estilos do .about-content permanecem */
+}
+
+.values-container {
+    display: flex; /* Mantém o layout flexível para os suboxes */
+    justify-content: space-around; /* Distribui o espaço entre e ao redor dos suboxes */
+    align-items: center; /* Centraliza os suboxes verticalmente */
+    margin-top: 20px; /* Espaço acima dos suboxes */
+}
+
+.value-box {
+    width: 30%; /* Largura de cada subox */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    text-align: center; /* Centraliza o texto dentro dos suboxes */
+    display: flex; /* Habilita o display flex para permitir alinhamento flexível de itens internos */
+    flex-direction: column; /* Organiza os itens internos verticalmente */
+    justify-content: center; /* Centraliza os itens internos verticalmente */
+    align-items: center; /* Centraliza os itens internos horizontalmente */
+}
+
+@media (max-width: 768px) {
+    .values-container {
+        flex-direction: column; /* Empilha os suboxes verticalmente em telas menores */
+    }
+    .value-box {
+        width: 80%; /* Ajusta a largura para telas menores */
+        margin-bottom: 20px; /* Espaço abaixo de cada subox */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos Gerais para as "Modalidades de Investimento" */
+
+/* Estilos Gerais para as "Modalidades de Investimento" */
+
+/* Estilos Gerais para a Seção de Investimentos */
+.container {
+    max-width: 100vw; /* Faz o container ocupar 100% da largura da viewport */
+    margin: auto; /* Centraliza o container na página */
+    display: flex; /* Habilita o layout flexível */
+    flex-direction: column; /* Organiza os filhos em coluna */
+    align-items: center; /* Centraliza os itens no eixo transversal (horizontal) */
+    justify-content: center; /* Adicionado para centralizar verticalmente */
+    background-color: rgba(255, 255, 255, 0.95); /* Branco com opacidade de 80% */
+    background-image: url('file:///C:/Users/carlo/Desktop/CTS/Site/Imagens/Modalidades Investimento/Teste 1.png'); /* Caminho absoluto para a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-size: cover; /* Garante que a imagem cubra todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */    
+    height: calc(100vh - 172px); /* Define a altura, subtraindo o espaço do cabeçalho/rodapé */
+}
+
+/* Estilos para os Containers de Modalidades de Investimento */
+.modalidades-container {
+    display: flex; /* Habilita o layout flexível */
+    flex-direction: column; /* Organiza os filhos em coluna */
+    align-items: center; /* Centraliza os itens no eixo transversal (horizontal) */
+    padding: 20px; /* Define um espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.95); /* Define uma cor de fundo com opacidade */
+    background-size: cover; /* Garante que a imagem de fundo cubra todo o espaço disponível */
+}
+
+/* Estilos para os Boxes */
+.box {
+    width: 80%; /* Define a largura dos boxes */
+    padding: 20px; /* Define um espaçamento interno */
+    margin: 20px 0; /* Define a margem entre os boxes */
+    background: rgba(255, 255, 255, 0.95); /* Define uma cor de fundo com opacidade */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adiciona uma sombra suave */
+    border-radius: 8px; /* Arredonda as bordas */
+}
+
+/* Estilos Específicos para o Box Central */
+.box-central {
+    text-align: center; /* Centraliza o texto */
+    width: 50%; /* Define a largura */
+}
+
+/* Ajustes para os Boxes 2 e 3 - Garantindo que fiquem lado a lado */
+.boxes-container {
+    display: flex; /* Habilita o layout flexível */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    width: 70%; /* Define a largura */
+}
+
+/* Ajustes para os Boxes de Modalidade Essencial e Premium */
+.box-essencial, .box-premium {
+    width: 48%; /* Define a largura para ocupar metade da largura disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilo Geral dos Botões CTA */
+.cta-btn {
+    display: inline-block; /* Exibe os elementos lado a lado e permite definir margens e preenchimento */
+    background-color: #4b0082; /* Cor de fundo roxa para destaque */
+    color: #ffffff; /* Cor do texto branco para contraste */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    padding: 10px 20px; /* Adiciona preenchimento interno ao botão CTA */
+    bottom: 50px; /* Posiciona o botão CTA a 50 pixels do fundo do contêiner do carrossel */
+    margin-top: 50px; /* Ajusta o espaço acima do botão */
+    margin-bottom: 10px; /* Mantém o espaço abaixo do botão, se necessário */
+    font-weight: bold; /* Torna o texto do botão em negrito para chamar atenção */
+    border-radius: 5px; /* Arredonda os cantos do botão para um visual mais suave */
+    transition: background-color 0.3s ease; /* Suaviza a transição da cor de fundo ao passar o mouse */
+    font-size: 16px; /* Define um tamanho de fonte para garantir legibilidade */
+}
+
+.cta-btn:hover {
+    background-color: #372759; /* Escurece a cor de fundo ao passar o mouse para indicar interatividade */
+    cursor: pointer; /* Muda o cursor para indicar que o elemento é clicável */
+}
+
+
+
+/* Estilos para Responsividade */
+@media (max-width: 768px) {
+    .div {
+        flex-direction: column; /* Organiza os filhos em coluna em telas menores */
+    }
+    .box-essencial, .box-premium {
+        width: 100%; /* Os boxes ocupam a largura total em telas menores */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para a página "Detalhes Essencial" */
+.essencial-content { 
+    background-image: url('file:///C:/Users/carlo/Desktop/CTS/Site/Imagens/Modalidades Investimento/Essencial/Teste 1.png'); /* Substitua pelo caminho correto da nova imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
+    background-position: center center; /* Centraliza a imagem no elemento */
+    background-attachment: scroll; /* A imagem de fundo irá rolar com a página */
+}
+
+#detalhes-essencial {
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 40px; /* Espaçamento interno */
+    background-color: rgba(248, 248, 248, 0.9); /* Cor de fundo com transparência */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave abaixo do container */
+}
+
+#detalhes-essencial h1 {    /* titulo principal no topo */
+    color: #333; /* Cor do texto do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.modalidade-info {      /* campo de Detalhes */
+    margin-top: 20px; /* Espaçamento acima da seção de informações */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Descrição da Modalidade Essencial */
+.description-box {
+    background-color: rgba(233, 236, 239, 0.9); /* Cor de fundo com transparência */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 30px; /* Espaçamento abaixo do box de descrição */
+}
+
+/* Lista de Detalhes da Modalidade essencial titulo */
+.modalidade-info-essencial {
+    text-align: left; /* Alinha o texto ao centro das células */
+    padding-left: 100px; /* Espaçamento à esquerda dos itens da lista */
+}
+
+/* Lista de Detalhes da Modalidade Essencial */
+.modalidade-details-list-essencial {
+    list-style: disc; /* Estilo dos marcadores da lista */
+    padding-left: 0px; /* Espaçamento à esquerda dos itens da lista */
+    margin-bottom: 20px; /* Espaçamento abaixo da lista */
+    text-align: left; /* Alinha o texto ao centro das células */
+}
+
+/* Tabela de Rentabilidade */
+.rentabilidade-table {
+    width: 40%; /* Largura da tabela */
+    margin-top: 20px; /* Espaçamento acima da tabela */
+    margin-bottom: 20px; /* Espaçamento abaixo da tabela */
+    margin-left: 20px; /* Espaçamento à esquerda da tabela */
+    margin-right: 20px; /* Espaçamento à direita da tabela */
+    border-collapse: collapse; /* Remove o espaçamento entre as bordas das células */
+}
+
+.rentabilidade-table th,
+.rentabilidade-table td {
+    border: 1px solid #ddd; /* Bordas das células da tabela */
+    padding: 5px; /* Espaçamento interno das células */
+    text-align: center; /* Alinha o texto ao centro das células */
+}
+
+.rentabilidade-table th {
+    background-color: #4b0082; /* Cor de fundo do cabeçalho da tabela */
+    color: white; /* Cor do texto do cabeçalho da tabela */
+}
+
+.rentabilidade-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo das linhas pares da tabela */
+}
+
+/* Botões de Ação */
+.cta {
+    margin-top: 30px; /* Espaçamento acima da seção de botões */
+    text-align: center; /* Centraliza os botões */
+}
+
+.cta-btn {
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #4b0082; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado do texto do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo ao passar o mouse */
+    margin-right: 10px; /* Espaçamento à direita do botão */
+}
+
+.cta-btn:hover {
+    background-color: #372759; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.cta-btn-back {
+    background-color: #4b0082; /* Cor de fundo do botão Voltar */
+}
+
+.cta-btn-back:hover {
+    background-color: #372759; /* Cor de fundo do botão Voltar ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+/* Estilos para a página "Detalhes Premium" */
+
+
+
+/* Estilos para a página "Detalhes Premium" espelhando "Detalhes Essencial" */
+.premium-content {
+    background-image: url('file:///C:/Users/carlo/Desktop/CTS/Site/Imagens/Modalidades Investimento/Premium/Teste 1.png'); /* Substitua pelo caminho correto da nova imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
+    background-position: center center; /* Centraliza a imagem no elemento */
+    background-attachment: scroll; /* A imagem de fundo irá rolar com a página */
+}
+
+#detalhes-premium {
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 40px; /* Espaçamento interno */
+    background-color: rgba(248, 248, 248, 0.9); /* Cor de fundo com transparência */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave abaixo do container */
+}
+
+#detalhes-premium h1 { /* título principal no topo */
+    color: #333; /* Cor do texto do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.description-box {
+    background-color: rgba(233, 236, 239, 0.9); /* Cor de fundo com transparência */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 30px; /* Espaçamento abaixo do box de descrição */
+}
+
+/* Lista de Detalhes da Modalidade essencial titulo */
+.modalidade-info-essencial {
+    text-align: left; /* Alinha o texto ao centro das células */
+    padding-left: 100px; /* Espaçamento à esquerda dos itens da lista */
+
+    
+}
+
+/* Lista de Detalhes da Modalidade premium titulo */
+.modalidade-info-premium {
+    text-align: left; /* Alinha o texto ao centro das células */
+    padding-left: 100px; /* Espaçamento à esquerda dos itens da lista */
+}
+
+/* Lista de Detalhes da Modalidade Essencial */
+.modalidade-details-list-premium {
+    list-style: disc; /* Estilo dos marcadores da lista */
+    padding-left: 0px; /* Espaçamento à esquerda dos itens da lista */
+    margin-bottom: 20px; /* Espaçamento abaixo da lista */
+    text-align: left; /* Alinha o texto ao centro das células */
+}
+
+
+/* Estilos para a tabela de modalidades de saque */
+.withdrawal-options-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px; /* Margem automática para centralizar horizontalmente */
+    margin-right: auto; /* Margem automática para centralizar horizontalmente */
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra opcional para a tabela */
+}
+
+.withdrawal-options-table th,
+.withdrawal-options-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.withdrawal-options-table th:nth-child(1) {
+    width: 10%; /* Ajuste conforme necessário para a primeira coluna */
+}
+
+.withdrawal-options-table th:nth-child(2),
+.withdrawal-options-table th:nth-child(3) {
+    width: 45%; /* Ajuste para que as colunas 2 e 3 tenham a mesma largura */
+}
+.withdrawal-options-table th {
+    background-color: #4b0082;
+    color: white;
+}
+
+.withdrawal-options-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Estilos para os botões de CTA */
+.cta-buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #4b0082;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #341a5d;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .premium-content,
+    #detalhes-premium {
+        background-attachment: fixed;
+    }
+
+    .withdrawal-options-table {
+        display: block;
+        overflow-x: auto; /* Permite rolagem horizontal em dispositivos menores */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilos para a seção "Acessando o Mercado Cripto" */
+
+/* Estilos do container principal */
+.crypto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Garante que o container ocupe toda a largura */
+    background-image: url('file:///C:/Users/carlo/Desktop/CTS/Site/Imagens/Acessando o Mercado Cripto/Teste 1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; /* A imagem de fundo irá rolar com a página */
+    padding: 10px 10px; /* Espaçamento interno do container */
+}
+
+/* Estilos para o Box de Introdução (Box 1) */
+.boxa.box-acesso {
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; /* Centraliza o box horizontalmente */
+    width: 60%; /* Largura menor para o Box 1 */
+    max-width: 800px; /* Largura máxima ajustada para o Box 1 */
+    text-align: center;
+}
+
+/* Estilos para o Box da Barra de Progresso (Box 2) */
+.boxa.box-progress {
+    background: rgba(255, 255, 255, 0.90);
+    padding: 40px;
+    border-radius: 8px;
+    width: 80%; /* Largura maior para o Box 2 */
+    max-width: 1200px; /* Largura máxima ajustada para o Box 2 */
+    margin: 20px auto; /* Centraliza o box horizontalmente */
+}
+
+/* Estilos da barra de progresso (sub-box 1)*/
+.progress-container {
+    width: 100%; /* Garante que a barra de progresso ocupe toda a largura do box */
+    }
+
+.progress-bar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly; /* Distribui os passos de forma uniforme */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.progress-step {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    flex-grow: 1; /* Permite que os passos cresçam e ocupem o espaço disponível */
+    margin: 0 5px; /* Adiciona um espaçamento entre os passos */
+    text-align: center; /* Centraliza o texto dentro dos passos */
+    transition: background-color 0.3s ease;
+}
+
+.progress-step.active {
+    background-color: #4b0082;
+    color: #fff;
+}
+
+/* Estilos dos passos de cadastro (Sub-Box 2)*/
+
+.step.active {
+    display: block;
+}
+
+.steps-container {
+    margin-top: 20px;
+}
+
+.step {
+    display: none;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.steps-container .step .cta {
+    text-align: right; /* Alinha os botões à direita */
+    width: 100%; /* Garante que o contêiner dos botões ocupe toda a largura disponível */
+    padding-top: 20px; /* Espaçamento acima dos botões */
+}
+
+/* Ajuste para botões lado a lado dentro do (Sub-box 2)*/
+.step .cta-button {
+    display: inline-block; /* Exibe os botões lado a lado */
+    margin-left: 10px; /* Espaçamento à esquerda para separar os botões */
+    padding: 10px 20px; /* Preenchimento padrão para os botões */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+
+/* Estilos do passo 1 */
+
+.step-title {
+    margin-top: 20px; /* Espaço antes do título */
+    margin-bottom: 20px; /* Espaço depois do título */
+  }
+  
+  .usdt-advantages, .step-description {
+    margin-bottom: 10px; /* Espaçamento pequeno entre todos os parágrafos */
+  }
+  
+  .usdt-advantages li {
+    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+  }
+  
+  .usdt-advantages {
+    padding-left: 20px; /* Alinha os marcadores com o início dos parágrafos */
+  }
+  
+  h4 {
+    margin-top: 20px; /* Espaço antes do título */
+    margin-bottom: 20px; /* Espaço depois do título */
+  }
+
+
+/* Estilos do passo 2 */
+.step-title {
+    margin-bottom: 30px; /* Ajuste o valor conforme necessário */
+}
+
+.registration-form {
+    max-width: 1000px; /* Ajuste conforme a largura do sub-box 2 */
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%; /* Ajuste para que duas colunas preencham a linha */
+}
+
+.form-label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.form-check-label {
+    font-size: 14px;
+}
+
+.form-actions {
+    text-align: right;
+    padding-top: 20px;
+}
+
+.form-input.filled {
+    background-color: #eaf0fd; /* Azul claro para indicar que o campo foi preenchido */
+}
+
+
+
+/* Estilos do passo 4 */
+.wallet-info {
+    padding-top: 40px;
+}
+
+/* Estilos consolidados para botões de chamada para ação (CTA) */
+.cta-button {
+    background-color: #320082; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+    text-decoration: none; /* Remove o sublinhado do texto do botão */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.cta-button:hover {
+    background-color: #372759; /* Cor de fundo do botão ao passar o mouse */
+    opacity: 0.9; /* Adiciona um efeito de transparência ao passar o mouse */
+}
+
+/* Responsividade do Formulário */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-column, .form-actions {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        text-align: center; /* Centraliza os elementos do formulário */
+    }
+    .step .cta-button {
+        margin: 10px 5px; /* Ajusta a margem para melhor visualização em telas menores */
+    }
+}
+
+/* Estilos de Input de Data */
+input[type="date"] {
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('caminho_para_seu_icone_de_calendario.png') no-repeat;
+    background-size: 20px 20px; /* Ajuste o tamanho do ícone conforme necessário */
+    background-position: right 10px center; /* Posiciona o ícone à direita */
+    cursor: pointer;
+    padding-right: 35px; /* Ajuste para não sobrepor o texto ao ícone */
+}
+
+/* Melhoria na visibilidade da mensagem de erro */
+.error-message {
+    color: red;
+    display: block; /* Mostra a mensagem de erro quando necessário */
+    margin-top: 10px; /* Espaçamento acima da mensagem de erro */
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilos para a seção "área do investidor" */
+
+.investor-area {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.investor-dashboard .dashboard-header h1 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.investor-dashboard .dashboard-header p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.dashboard-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.overview-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card .amount {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transactions-table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.transactions-table th,
+.transactions-table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.transactions-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+/* Estilos para a seção "Feedback dos investidores" */
+
+.feedback-area {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.feedback-header h1 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feedback-header p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.feedback-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedback-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.feedback-card .investor-quote p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.feedback-card .investor-details h3 {
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.feedback-card .investor-details p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+
+
+
+/* Estilos para a seção "FAQ" */
+
+.faq-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2em;
+}
+
+.faq-container {
+    border-top: 2px solid #ddd;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.faq-item h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.faq-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+
+/* Estilos para a seção "Contato" */
+.contact-main {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-main h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-main p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessando o Mercado Cripto - CTS CryptoTrader Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="C:\Users\carlo\Desktop\CTS\Site\Imagens\Cabeçalho\CTS - LOGO 1 (Margem reduzida).png" class="logo-image" />
+            </div>
+            <div class="header-right">
+                <!-- Início do Formulário de Busca -->
+                <form action="/caminho_para_pesquisa" method="get" class="search-form">
+                    <input type="search" name="query" class="search-input" placeholder="Buscar..."/>
+                </form>
+                <!-- Fim do Formulário de Busca -->
+                <img src="C:\Users\carlo\Desktop\CTS\Site\Imagens\Cabeçalho\USA.PNG" alt="US" class="country-flag">
+                <img src="C:\Users\carlo\Desktop\CTS\Site\Imagens\Cabeçalho\Brazil.PNG" alt="BR" class="country-flag">
+                <button onclick="location.href='login.html'" class="login-button">Login</button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="investimentos.html">Modalidades de Investimento</a></li>
+                <li><a href="mercado-cripto.html" class="active">Acessando o Mercado Cripto</a></li>
+                <li><a href="dashboard.html">Área do Investidor</a></li>
+                <li><a href="feedback.html">Feedback dos Investidores</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+
+    <!-- Conteúdo da página Acessando o Mercado Cripto -->
+
+<!-- Conteúdo da página Acessando o Mercado Cripto -->
+
+    <!-- Box Main - ( crypto-container ) -->
+        <!-- Box 1 - ( boxa box-acesso ) -->
+            <!-- Conteudo Texto total - ( intro-section ) -->
+                <!-- Conteudo Texto Titulo - ( section-title ) -->
+                <!-- Conteudo Texto Parágrafos - ( intro-text ) -->
+        <!-- Box 2 - ( boxa box-progress ) -->
+            <!-- Conteudo Texto total - ( registration-process ) -->
+                <!-- Conteudo Texto Titulo - ( section-title ) -->
+                    <!-- Sub-box 2.1 - ( boxa box-progress ) -->
+                        <!-- Barra de progresso - ( progress-container ) -->
+                            <!-- Barra de progresso Icones - ( progress-bar ) -->
+                                <!-- Icones da barra separados - ( progress-step ) -->
+                    <!-- Sub-box 2.2 - ( Step ) ( 8 IDS 1 Separado , Pacote de mais 7 IDs ) -->
+                        <!-- quadro do botão iniciar ( step id- Step-zero ) -->
+                        <!-- Capote com 7 passos ( steps-container ) -->
+                            <!-- Passo 1: Introdução ao Mercado Cripto e USDT ( step id- step-intro ) -->
+                            <!-- Passo 2: Preenchimento do Formulário Online ( step id- step-form ) -->
+                            <!-- Passo 3: Assinatura Digital do Contrato ( step id- step-signature ) -->
+                            <!-- Passo 4: Instruções para Aquisição e Envio de USDT ( step id- step-usdt ) -->
+                            <!-- Passo 5: Anexação do Comprovante de Depósito ( step id- step-deposit ) -->
+                            <!-- Passo 6: Definição da Carteira e Rede para Recebimento dos Rendimentos ( step id- step-wallet ) -->
+                            <!-- Passo 7: Confirmação e Ativação do Contrato ( step id- step-cofirmation ) -->
+
+
+    <main class="crypto-container">
+        <!-- Seção de Introdução em um Box -->
+        <div class="boxa box-acesso">
+            <section class="intro-section">
+                <h1 class="section-title">A jornada para se tornar um investidor na CTS começa aqui</h1>
+                <p class="intro-text">
+                    Nosso processo de cadastro é projetado para ser simples, seguro e transparente, permitindo que você inicie rapidamente sua experiência de investimento no mercado de criptomoedas.
+                </p> 
+                <p>
+                    Siga os passos abaixo para se cadastrar:
+                </p>
+            </section>
+        </div>
+
+        <!-- Processo de Cadastro do Investidor em um Box -->
+        <div class="boxa box-progress">
+            <section class="registration-process">
+                <h2 class="section-title">Seu Caminho para se Tornar um Investidor</h2>
+                <!-- Barra de progresso em um Sub-box 1 -->
+                <div class="boxa box-progress">
+                    <div class="progress-container">
+                        <ul class="progress-bar">
+                            <li class="progress-step active">Introdução</li>
+                            <li class="progress-step">Formulário Online</li>
+                            <li class="progress-step">Assinatura Digital</li>
+                            <li class="progress-step">Aquisição e Envio de USDT</li>
+                            <li class="progress-step">Comprovante de Depósito</li>
+                            <li class="progress-step">Carteira e Rede</li>
+                            <li class="progress-step">Confirmação e Ativação</li>
+                        </ul>
+                    </div>
+                </div>    
+
+                <!-- Sub-box 1 -->
+                <!-- Botão Começar como Passo ZERO -->
+                <div class="step" id="step-zero">
+                    <button class="cta-button" onclick="nextStep(1)">Começar</button>
+                </div>        
+                
+        
+                <!-- Passos do Cadastro em Sub-boxes -->
+                <div class="steps-container">
+                        <!-- Passo 1: Introdução ao Mercado Cripto e USDT -->
+                        <div class="step" id="step-intro">
+                            <h3 class="step-title">Introdução ao Mercado Cripto e USDT</h3>
+                            <p class="step-description">
+                                Bem-vindo ao emocionante mundo das criptomoedas, um universo digital que revolucionou a maneira como entendemos e utilizamos o dinheiro. As criptomoedas são moedas digitais criptografadas, projetadas para funcionar como um meio de troca. Elas utilizam uma tecnologia chamada blockchain, que garante segurança, transparência e descentralização nas transações. Ao contrário das moedas tradicionais, as criptomoedas operam independentemente de uma autoridade central, como um banco ou governo, oferecendo liberdade financeira e anonimato aos seus usuários.
+                            </p>
+                            <p class="step-description">
+                                O mercado de criptomoedas é vasto e está em constante evolução, abrangendo desde o Bitcoin, a primeira e mais conhecida criptomoeda, até uma variedade de outras opções, cada uma com suas características e usos específicos. Investir em criptomoedas pode ser uma jornada empolgante, proporcionando oportunidades de diversificação de portfólio, potencial de retorno elevado e acesso a tecnologias financeiras inovadoras.
+                            </p>
+                            
+                            <h4>O que é USDT e suas vantagens</h4>
+                            <p class="step-description">
+                                O USDT, ou Tether, representa uma ponte entre as moedas tradicionais e as criptomoedas, sendo uma stablecoin cujo valor está atrelado ao dólar americano (USD) numa relação de 1:1. Isso significa que 1 USDT é projetado para ser sempre equivalente a 1 dólar americano, essa paridade proporciona uma estabilidade única no volátil mercado cripto, tornando o USDT uma escolha ideal para transações financeiras, como as realizadas entre você e a CTS.
+                            </p>
+                            
+                            <h4>Utilizar USDT traz diversas vantagens:</h4>
+                            <ul class="usdt-advantages">
+                                <li><strong>Estabilidade:</strong> Ao estar atrelado ao dólar, o USDT oferece previsibilidade e segurança contra as abruptas flutuações de preço comuns a outras criptomoedas.</li>
+                                <li><strong>Transações Eficientes:</strong> Com o USDT, as transações são rápidas e com custos reduzidos, facilitando o envio e recebimento de fundos globalmente, sem as complicações e taxas associadas às transferências bancárias tradicionais.</li>
+                                <li><strong>Simplicidade e Transparência:</strong> Operar com USDT simplifica o processo de gestão de investimentos na CTS, pois seu valor estável e equivalente ao dólar torna fácil a compreensão e o acompanhamento do seu capital e retornos.</li>
+                            </ul>
+                            
+                            <p class="step-description">
+                                Ao escolher o USDT para suas transações com a CTS, você opta por uma solução que alia a inovação do mercado cripto à estabilidade e familiaridade do dólar, garantindo uma experiência de investimento segura, transparente e eficiente.
+                            </p>
+                            
+                            <div class="cta" id="cta-passo1">
+                                <button class="cta-button" onclick="nextStep(0)">Voltar</button>
+                                <button class="cta-button" onclick="nextStep(2)">Próximo Passo</button>
+                            </div>
+                        </div>
+
+
+                        <!-- Passo 2: Preenchimento do Formulário Online -->
+                        <div class="step" id="step-form">
+                            <h3 class="step-title">2. Preenchimento do Formulário Online</h3>
+                            <form id="registrationForm" action="/submit_registration" method="post" class="registration-form">
+                                <!-- Informações Pessoais -->
+                                <div class="form-row">
+                                    <div class="form-column">
+                                        <label for="fullName" class="form-label">Nome Completo:</label>
+                                        <input type="text" id="fullName" name="fullName" class="form-input" required placeholder="Digite seu nome completo">
+                                    </div>
+                                    <div class="form-column">
+                                        <label for="birthdate" class="form-label">Data de Nascimento:</label>
+                                        <input type="date" id="birthdate" name="birthdate" class="form-input" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-column">
+                                        <label for="nationality" class="form-label">Nacionalidade:</label>
+                                        <input type="text" id="nationality" name="nationality" class="form-input" required placeholder="Sua Nacionalidade">
+                                    </div>
+                                    <div class="form-column">
+                                        <label for="documentType" class="form-label">Tipo de Documento:</label>
+                                        <select id="documentType" name="documentType" class="form-input">
+                                            <option value="">Selecione...</option>
+                                            <option value="Passaporte">Passaporte</option>
+                                            <option value="Carteira de Identidade">Carteira de Identidade</option>
+                                            <option value="Carteira de Motorista">Carteira de Motorista</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-column">
+                                        <label for="documentNumber" class="form-label">Número do Documento:</label>
+                                        <input type="text" id="documentNumber" name="documentNumber" class="form-input" placeholder="Número do Documento">
+                                    </div>
+                                    <div class="form-column">
+                                        <label for="email" class="form-label">Endereço de E-mail:</label>
+                                        <input type="email" id="email" name="email" class="form-input" required placeholder="Digite seu e-mail">
+                                    </div>
+                                </div>
+
+                                <!-- Números de Telefone -->
+                                <div class="form-row">
+                                    <div class="form-column">
+                                        <label for="phone" class="form-label">Número de Telefone 1:</label>
+                                        <input type="tel" id="phone" name="phone" class="form-input" required placeholder="Digite seu número de telefone principal">
+                                    </div>
+                                    <div class="form-column">
+                                        <label for="phone2" class="form-label">Número de Telefone 2:</label>
+                                        <input type="tel" id="phone2" name="phone2" class="form-input" placeholder="Digite um número de telefone secundário (opcional)">
+                                    </div>
+                                </div>
+
+                                <!-- Endereço -->
+                                <div class="form-row">
+                                    <div class="form-column">
+                                        <label for="address" class="form-label">Endereço:</label>
+                                        <input type="text" id="address" name="address" class="form-input" required placeholder="Digite seu endereço completo">
+                                    </div>
+                                    <div class="form-column">
+                                        <label for="city" class="form-label">Cidade:</label>
+                                        <input type="text" id="city" name="city" class="form-input" required placeholder="Sua Cidade">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-column">
+                                        <label for="state" class="form-label">Estado/Província:</label>
+                                        <input type="text" id="state" name="state" class="form-input" required placeholder="Seu Estado ou Província">
+                                    </div>
+                                    <div class="form-column">
+                                        <label for="country" class="form-label">País:</label>
+                                        <input type="text" id="country" name="country" class="form-input" required placeholder="Seu País">
+                                    </div>
+                                </div>
+
+                                <!-- Modalidade de Investimento e Valor do Investimento -->
+                                <div class="form-row">
+                                    <div class="form-column">
+                                        <label for="investmentType" class="form-label">Modalidade de Investimento:</label>
+                                        <select id="investmentType" name="investmentType" class="form-input" required>
+                                            <option value="">Selecione uma modalidade...</option>
+                                            <option value="essential">Essencial</option>
+                                            <option value="premium">Premium</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-column">
+                                        <label for="investmentAmount" class="form-label">Valor do Investimento (em USDT):</label>
+                                        <input type="number" id="investmentAmount" name="investmentAmount" class="form-input" required placeholder="Digite o valor que deseja investir">
+                                    </div>
+                                </div>
+
+                                <!-- Termos e Condições -->
+                                <div class="form-row">
+                                    <div class="form-column">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="terms" name="terms" class="form-check-input" required>
+                                            <label for="terms" class="form-check-label">Eu li e aceito os <a href="/terms_and_conditions" target="_blank">Termos e Condições</a>.</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Botões de Ação -->
+                                <div class="cta" id="cta-passo2">
+                                    <button type="button" class="cta-button cta-btn-back" onclick="previousStep(1)">Voltar</button>
+                                    <button type="submit" class="cta-button cta-button-submit" id="submitBtn">Enviar Inscrição</button>
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <!-- Passo 3: Assinatura Digital do Contrato -->
+                        <div class="step" id="step-signature">
+                            <h3 class="step-title">3. Assinatura Digital do Contrato</h3>
+                            <p class="step-description">
+                                Revisão do Contrato: Recomendamos que leia atentamente o contrato para garantir que todas as condições estejam claras e sejam aceitáveis para você.
+                            </p>
+                            <p class="step-description">
+                                Assinatura: Utilize nossa ferramenta de assinatura digital integrada para assinar o contrato eletronicamente. Este processo é seguro e legalmente vinculativo.
+                            </p>
+                            <!-- Aqui você pode incluir o contrato em um iframe ou como um documento PDF embutido -->
+                            <iframe src="URL_DO_CONTRATO_AQUI" width="600" height="400"></iframe>
+                                
+                            <!-- Botões de Ação -->
+                            <div class="cta" id="cta-passo3">
+                                <button class="cta-button" onclick="previousStep(2)">Voltar</button>
+                                <button class="cta-button" id="signButton">Assinar Contrato</button>
+                                <button class="cta-button hidden" id="nextStepButton" onclick="nextStep(4)">Próximo Passo</button>
+                            </div>
+                        </div>
+
+
+                        <!-- Passo 4: Instruções para Aquisição e Envio de USDT -->
+                        <div class="step" id="step-usdt">
+                            <h3 class="step-title">4. Aquisição e Envio de USDT</h3>
+                            
+                            <!-- Vídeos para Compra de USDT -->
+                            <div class="video-container">
+                                <div class="video">
+                                    <p class="step-description">
+                                        4.1 - Compra de USDT: Orientações sobre como comprar USDT em uma corretora de criptomoedas confiável.
+                                    </p>
+                                    <p>
+                                        <br>Compra de USDT "via celular".
+                                    </p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video">
+                                    <p class="step-description">
+                                        <br>Compra de USDT "via computador".
+                                    </p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <p class="step-description">
+                            <br><br>
+                            </p>
+                            
+                            <!-- Vídeos para Transferência para a CTS -->
+                            <div class="video-container">
+                                <div class="video">
+                                    <p class="step-description">
+                                        4.2 - Transferência para a CTS: Instruções detalhadas sobre como transferir USDT da sua carteira para a carteira da CTS, incluindo o endereço da carteira da CTS.
+                                    </p>
+                                    <p>
+                                        <br>Transferencia de USDT "via celular".
+                                    </p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="video">
+                                    <p class="step-description">
+                                        <br>Transferência de USDT "via computador".
+                                    </p>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="wallet-info">
+                                <p class="step-description">Carteira da CTS:</p>
+                                <img src='file:///C:/Users/carlo/Desktop/CTS/Site/Imagens/Acessando o mercado Cripto/Passo 4/QRCODE.jpg' alt="QR Code da Carteira CTS">
+                                <div class="wallet-code">
+                                    <input type="text" id="walletAddress" readonly value="123456789012345678901234567890" />
+                                    <button onclick="copyWalletAddress()">Copiar</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Botões com afastamento da última frase -->
+                            <div class="cta" id="cta-passo4">
+                                <button class="cta-button" onclick="previousStep(3)">Voltar</button>
+                                <button class="cta-button" onclick="nextStep(5)">Próximo Passo</button>
+                            </div>
+                        </div>    
+
+
+                        <!-- Passo 5: Anexação do Comprovante de Depósito -->
+                        <div class="step" id="step-deposit">
+                            <h3 class="step-title">5. Comprovante de Depósito</h3>
+                            <p class="step-description">
+                                Utilize o formulário disponível em nosso site para fazer o upload do comprovante de transferência de USDT.
+                            </p>
+                            <div class="cta" id="cta-passo5">
+                                <button class="cta-button" onclick="previousStep(4)">Voltar</button>
+                                <button class="cta-button" onclick="nextStep(6)">Próximo Passo</button>
+                            </div> 
+                        </div>
+            
+
+                        <!-- Passo 6: Definição da Carteira e Rede para Recebimento dos Rendimentos -->
+                        <div class="step" id="step-wallet">
+                            <h3 class="step-title">6. Carteira e Rede</h3>
+                            <p class="step-description">
+                                Após a transferência de USDT para a carteira da CTS, solicitaremos que você defina a carteira digital e a rede específica (ERC-20, TRC-20, etc.) pela qual deseja receber os seus rendimentos.
+                            </p>
+                            <div class="cta" id="cta-passo6">
+                                <button class="cta-button" onclick="previousStep(5)">Voltar</button>
+                                <button class="cta-button" onclick="nextStep(7)">Próximo Passo</button>
+                            </div>    
+                        </div>
+            
+
+                        <!-- Passo 7: Confirmação e Ativação do Contrato -->
+                        <div class="step" id="step-confirmation">
+                            <h3 class="step-title">7. Confirmação e Ativação</h3>
+                            <p class="step-description">
+                                Verificação pela CTS: Nossa equipe verificará o depósito e as informações fornecidas. Este processo pode levar até 24 horas.
+                            </p>
+                            <p class="step-description">
+                                Ativação: Após a confirmação do depósito, seu contrato será ativado, e você oficialmente se tornará um investidor na CTS.
+                            </p>
+                            <div class="cta" id="cta-passo6">
+                                <button class="cta-button" onclick="previousStep(6)">Voltar</button>
+                                <button class="cta-button" onclick="nextStep(8)">Finalizar Cadastro</button>
+                            </div>    
+                        </div>    
+                </div>
+                
+            </section>                    
+        </div>
+
+    </main>
+    
+
+
+
+
+
+
+
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2023 CTS CryptoTrader Service. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Chat de Inteligência Artificial -->
+    <div id="chat-icon-container">
+        <button id="chat-icon" onclick="openChat()">
+            <!-- Substitua o caminho do src pela localização do seu ícone de chat -->
+            <img src="C:\Users\carlo\Desktop\CTS\Site\Imagens\Chat\Icone 1.png" alt="Chat Icon" />
+        </button>
+    </div>
+
+
+    <!-- Inserir aqui o script de chat ou referência ao arquivo de script, se necessário -->
+
+
+    
+    <script>
+        // Evento que aguarda o carregamento completo do DOM
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Inicializa a página sem rolar automaticamente para o Box 2, valida o formulário e atualiza o plano de fundo dos campos preenchidos
+            nextStep(0, false);
+            validateForm();
+            updateFieldBackground(); // Verifica os campos preenchidos ao carregar a página
+        });
+        
+        // Função para rolar a página até o Box 2 de forma suave
+        function scrollToBox2() {
+            const box2 = document.querySelector('.boxa.box-progress');
+            if (box2) {
+                window.scrollTo({
+                    top: box2.offsetTop - 20, // Ajusta o valor conforme necessário para alinhamento
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        // Controla a navegação entre os passos do formulário
+        function nextStep(stepNumber, shouldScroll = true) {
+            const steps = document.querySelectorAll('.progress-step');
+            steps.forEach((step, index) => {
+                step.classList.toggle('active', index < stepNumber);
+            });
+        
+            const allSteps = document.querySelectorAll('.step');
+            allSteps.forEach((step, index) => {
+                step.classList.toggle('active', index === stepNumber);
+            });
+        
+            if (stepNumber === 3) {
+                validateSignature();
+            }
+        
+            if (shouldScroll) {
+                scrollToBox2(); // Só rola para o Box 2 se shouldScroll for verdadeiro
+            }
+        }
+        
+        // Função para voltar ao passo anterior do formulário
+        function previousStep() {
+            const activeStepIndex = Array.from(document.querySelectorAll('.step')).findIndex(step => step.classList.contains('active'));
+            if (activeStepIndex > 0) {
+                nextStep(activeStepIndex - 1);
+            }
+        }
+        
+        // Valida o formulário e previne o envio padrão se o formulário não for válido
+        function validateForm() {
+            var form = document.getElementById('registrationForm');
+            var isValid = form.checkValidity();
+        
+            if (!isValid) {
+                var invalidElement = document.querySelector(':invalid');
+                invalidElement.focus();
+                form.addEventListener('submit', preventDefaultSubmit);
+            } else {
+                form.removeEventListener('submit', preventDefaultSubmit);
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    finalizeRegistration();
+                });
+            }
+        }
+        
+        // Atualiza o plano de fundo dos campos quando alterados
+        var formInputs = document.querySelectorAll('.form-input');
+        formInputs.forEach(function(input) {
+            input.addEventListener('change', function() {
+                validateForm();
+                updateFieldBackground(); // Atualiza o plano de fundo dos campos após serem alterados
+            });
+        });
+        
+        // Atualiza o formulário quando o checkbox de termos é alterado
+        var termsCheckbox = document.getElementById('terms');
+        termsCheckbox.addEventListener('change', validateForm);
+        
+        // Personaliza o placeholder do número do documento com base no tipo de documento selecionado
+        document.getElementById('documentType').addEventListener('change', function() {
+            var documentType = this.value;
+            var documentNumberInput = document.getElementById('documentNumber');
+        
+            documentNumberInput.placeholder = documentType ? `Número do ${documentType}` : 'Número do Documento';
+            updateFieldBackground(); // Atualiza o plano de fundo quando o tipo de documento é alterado
+        });
+        
+        // Exibe o botão de próxima etapa após a validação da assinatura
+        function validateSignature() {
+            document.getElementById('signButton').addEventListener('click', function() {
+                document.getElementById('nextStepButton').classList.remove('hidden');
+            });
+        }
+        
+        // Valida o valor do investimento com base na modalidade escolhida
+        function validateInvestmentAmount() {
+            const investmentType = document.getElementById('investmentType').value;
+            const investmentAmountInput = document.getElementById('investmentAmount');
+            let investmentAmount = parseFloat(investmentAmountInput.value.replace(/,/g, '')) || 0;
+        
+            let minValue = investmentType === 'essential' ? 1000 : investmentType === 'premium' ? 100000 : 0;
+        
+            const existingError = document.querySelector('.investment-error');
+            if (existingError) {
+                existingError.remove();
+            }
+        
+            if (investmentAmount < minValue && investmentAmount !== 0) {
+                const errorMessage = document.createElement('div');
+                errorMessage.classList.add('investment-error');
+                errorMessage.textContent = `O valor mínimo para a modalidade ${investmentType === 'essential' ? 'Essencial' : 'Premium'} é de US$ ${minValue.toLocaleString('en-US')},00.`;
+                investmentAmountInput.parentNode.insertBefore(errorMessage, investmentAmountInput.nextSibling);
+                return false;
+            }
+        
+            return true;
+        }
+        
+        // Acompanha alterações na modalidade de investimento e valor do investimento para validação
+        document.getElementById('investmentType').addEventListener('change', validateInvestmentAmount);
+        document.getElementById('investmentAmount').addEventListener('input', function() {
+            const existingError = document.querySelector('.investment-error');
+            if (existingError) {
+                existingError.remove();
+            }
+            validateForm();
+        });
+        
+        // Finaliza o registro se o valor do investimento for válido
+        function finalizeRegistration() {
+            if (validateInvestmentAmount()) {
+                console.log('Formulário válido. Pronto para ser submetido.');
+                nextStep(3); // Avança para o próximo passo após a validação e envio do formulário
+            } else {
+                validateForm();
+            }
+        }
+        
+        // Previne o envio padrão do formulário
+        function preventDefaultSubmit(event) {
+            event.preventDefault();
+        }
+        
+        // Event listeners para botões de voltar e enviar
+        document.getElementById('backButton')?.addEventListener('click', previousStep);
+        document.getElementById('submitButton')?.addEventListener('click', finalizeRegistration);
+        
+        // Atualiza o plano de fundo dos campos preenchidos
+        function updateFieldBackground() {
+            var formInputs = document.querySelectorAll('.form-input');
+            formInputs.forEach(function(input) {
+                // Verifica se o campo está preenchido e adiciona a classe 'filled'
+                input.classList.toggle('filled', !!input.value);
+            });
+        }
+
+        // Copia o código da carteira disponibilizado no passo 4 de cadastro
+        function copyWalletAddress() {
+            var copyText = document.getElementById("walletAddress");
+            copyText.select(); // Seleciona o texto do campo
+            copyText.setSelectionRange(0, 99999); // Para dispositivos móveis
+            navigator.clipboard.writeText(copyText.value); // Copia o texto selecionado
+            alert("Endereço copiado: " + copyText.value); // Exibe um alerta confirmando a cópia
+        }        
+        </script>
+
+
+</body>
+</html>

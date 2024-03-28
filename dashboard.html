@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Investidor - CTS CryptoTrader Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+
+<body>
+        <!-- Cabeçalho -->
+        <header>
+            <div class="top-header">
+                <div class="logo">
+                    <img src="C:\Users\carlo\Desktop\CTS\Site\Imagens\Cabeçalho\CTS - LOGO 1 (Margem reduzida).png" class="logo-image" />
+                </div>
+                <div class="header-right">
+                    <!-- Início do Formulário de Busca -->
+                    <form action="/caminho_para_pesquisa" method="get" class="search-form">
+                        <input type="search" name="query" class="search-input" placeholder="Buscar..."/>
+                    </form>
+                    <!-- Fim do Formulário de Busca -->
+                    <img src="C:\Users\carlo\Desktop\CTS\Site\Imagens\Cabeçalho\USA.PNG" alt="US" class="country-flag">
+                    <img src="C:\Users\carlo\Desktop\CTS\Site\Imagens\Cabeçalho\Brazil.PNG" alt="BR" class="country-flag">
+                    <button onclick="location.href='login.html'" class="login-button">Login</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="investimentos.html">Modalidades de Investimento</a></li>
+                    <li><a href="mercado-cripto.html">Acessando o Mercado Cripto</a></li>
+                    <li><a href="dashboard.html" class="active">Área do Investidor</a></li>
+                    <li><a href="feedback.html">Feedback dos Investidores</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+
+
+
+
+
+    <!-- Conteúdo da página Área do Investidor -->
+    <main class="investor-area">
+        <section class="investor-dashboard">
+            <div class="dashboard-header">
+                <h1>Dashboard do Investidor</h1>
+                <p>Aqui você pode visualizar o resumo do seu portfólio, realizar operações e acompanhar o desempenho dos seus investimentos.</p>
+            </div>
+            <div class="dashboard-content">
+                <div class="investment-overview">
+                    <h2>Visão Geral do Investimento</h2>
+                    <div class="overview-cards">
+                        <div class="card balance">
+                            <h3>Saldo Atual</h3>
+                            <p class="amount">$50,000.00 USDT</p>
+                        </div>
+                        <div class="card returns">
+                            <h3>Retornos Mensais</h3>
+                            <p class="amount">$5,000.00 USDT</p>
+                        </div>
+                        <div class="card total-invested">
+                            <h3>Total Investido</h3>
+                            <p class="amount">$100,000.00 USDT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="transaction-history">
+                    <h2>Histórico de Transações</h2>
+                    <table class="transactions-table">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Descrição</th>
+                                <th>Valor</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01/04/2023</td>
+                                <td>Depósito Inicial</td>
+                                <td>$100,000.00 USDT</td>
+                                <td>Concluído</td>
+                            </tr>
+                            <!-- Adicione mais linhas conforme necessário -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2023 CTS CryptoTrader Service. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <!-- Chat de Inteligência Artificial -->
+    <div id="chat-icon-container">
+        <button id="chat-icon" onclick="openChat()">
+            <!-- Substitua o caminho do src pela localização do seu ícone de chat -->
+            <img src="C:\Users\carlo\Desktop\CTS\Site\Imagens\Chat\Icone 1.png" alt="Chat Icon" />
+        </button>
+    </div>
+
+
+    <!-- Inserir aqui o script de chat ou referência ao arquivo de script, se necessário -->
+
+
+
+</body>
+</html>
